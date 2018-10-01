@@ -5,7 +5,11 @@ export default class Login extends React.Component {
     render() {
         const signIn = (
             <Tooltip id="signIn">
-                <h2>This is Login Overlay</h2>
+                <div className="login-parent">
+                    <div className="fb">
+                        <Button className="btns" bsStyle="primary"><span><i className="fab fa-facebook-f"></i></span> Login Using Facebook</Button>
+                    </div>
+                </div>
             </Tooltip>
         );
         const signUp = (
