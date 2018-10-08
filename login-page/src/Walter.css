@@ -1,0 +1,17 @@
+@keyframes slidein {
+    from {
+      margin-left: 100px;
+      width: 500%;
+    }
+  
+    to {
+      margin-right: 100px;
+      width: 300%;
+    }
+  }
+  .walter{
+    animation: slidein 3s ease 1s;
+    height: auto;
+    width: auto;
+    animation-delay: 250ms;
+  }

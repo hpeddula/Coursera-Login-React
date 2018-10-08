@@ -5,22 +5,16 @@ import './Header.css'
 export default class Header extends React.Component {
     render() {
         return (
-            <Navbar className="nav-header">
+            <Navbar >
                 <Nav>
                     <NavItem eventKey={1}>
-                        <div>
-                            <Link to='/'>Home</Link>
-                        </div>
+                        <Link to='/'>Home</Link>
                     </NavItem>
                     <NavItem eventKey={2}>
-                        <div>
-                            <Link to='/login'>Login</Link>
-                        </div>
+                        <Link to='/login'>Login</Link>
                     </NavItem>
                     <NavItem eventKey={3}>
-                        <div>
-                            <Link to='/walter'>Walter</Link>
-                        </div>
+                        <Link to='/walter'>Walter</Link>
                     </NavItem>
                 </Nav>
             </Navbar>
