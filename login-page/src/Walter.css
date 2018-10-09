@@ -8,6 +8,8 @@
 }
 .walter{
   animation: slidein 2s ease-in-out;
+  height: inherit;
+  width: inherit;
 }
 .walter:hover{
   filter: grayscale(1) blur(4px);

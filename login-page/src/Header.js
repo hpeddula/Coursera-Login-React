@@ -1,28 +1,26 @@
-import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavbarBrand, NavItem } from 'react-bootstrap';
 import React from 'react';
-import './Header.css'
 export default class Header extends React.Component {
     render() {
         return (
-            <Navbar fluid={false} >
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="/">Home</a>
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav>
-                    <NavItem eventKey={2} href="/login">
-                        Login
-                    </NavItem>
-                    <NavItem eventKey={3} href="/walter">
-                        Walter
-                    </NavItem>
-                    <NavItem href="/pdf">
-                        Pdf
-                    </NavItem>
-                </Nav>
-            </Navbar>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" href="/">Home</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav">
+                        <li className="nav-item ">
+                            <a className="nav-link" href="/login">Login</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/walter">Walter</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/pdf">PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         );
     }
 }

@@ -1,25 +1,15 @@
-.text-center
+.login-box
 {
+    padding: 32px;
+    max-width: 400px;
+    margin: auto;
+    /* background: rgb(66, 66, 228);
+    color: black; */
+}
+.login-container {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
     text-align: center;
-}
-.button-padding
-{
-    margin:10px;
-    padding:10px;
-}
-.btns
-{
-    margin:10px;
-}
-.fb
-{
-    margin:auto;
-    padding: auto;
-}
-.login-parent
-{
-    width: auto;
-    height: auto;
-    background: white;
-    display: inline-flex;
 }
