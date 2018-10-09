@@ -1,17 +1,14 @@
-@keyframes slidein {
-    from {
-      margin-left: 100px;
-      width: 500%;
-    }
-  
-    to {
-      margin-right: 100px;
-      width: 300%;
-    }
+@keyframes slidein{
+  from {
+    transform: scale(0);
   }
-  .walter{
-    animation: slidein 3s ease 1s;
-    height: auto;
-    width: auto;
-    animation-delay: 250ms;
+  to {
+    transform: scale(1);
   }
+}
+.walter{
+  animation: slidein 2s ease-in-out;
+}
+.walter:hover{
+  filter: grayscale(1) blur(4px);
+}
