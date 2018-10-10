@@ -1,4 +1,4 @@
-.login-box
+.login
 {
     padding: 32px;
     margin: 32px auto auto auto;
@@ -15,6 +15,15 @@
 }
 .login-tooltip
 {
-    background: blue;
-    color: white;
+   color:black;
+   height: 30%;
+   width: 30%;
+}
+.tooltip-inner{
+    background: white !important;
+}
+.login-parent
+{
+    height: 100vh;
+    background: #3f3f3f;
 }

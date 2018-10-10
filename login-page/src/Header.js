@@ -18,6 +18,9 @@ export default class Header extends React.Component {
                         <li className="nav-item">
                             <a className="nav-link" href="/pdf">PDF</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/tp-login">TP</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

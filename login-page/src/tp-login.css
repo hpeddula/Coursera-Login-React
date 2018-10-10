@@ -1,0 +1,32 @@
+.login-box{
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 20px;
+    min-width: 500px;
+    text-align: center;
+    color: white;
+}
+.btns
+{
+    color: white;
+    background: black;
+}
+.p-login{
+    height: 100vh;
+    background:url(https://www.tpx.com/wp-content/uploads/2017/03/TPx-Complete-Slider-Image-July-9-Fits.jpg);
+    padding: 7rem;
+}
+.tp-font{
+    color:#0d0d0d;
+}
+#email
+{
+    width: 370px;
+}
+#pwd
+{
+    width: 370px;
+}
+.sha{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
