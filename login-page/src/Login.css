@@ -13,3 +13,8 @@
 {
     margin: 16px;
 }
+.login-tooltip
+{
+    background: blue;
+    color: white;
+}
