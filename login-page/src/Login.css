@@ -1,15 +1,15 @@
 .login-box
 {
     padding: 32px;
-    max-width: 400px;
-    margin: auto;
-    /* background: rgb(66, 66, 228);
-    color: black; */
+    margin: 32px auto auto auto;
+    /* border: blue solid 1px;
+    border-radius: 5px; */
 }
-.login-container {
-    padding: 32px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
-    text-align: center;
+.sign-in
+{
+    margin: 16px;
+}
+.sign-up
+{
+    margin: 16px;
 }
