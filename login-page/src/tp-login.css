@@ -19,6 +19,47 @@
 .tp-font{
     color:#0d0d0d;
 }
+@media screen and (min-width: 576px) {
+    #email
+    {
+        width: 129px !important;
+    }
+    #pwd
+    {
+    width: 129px !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    #email
+    {
+        width: inherit !important;
+    }
+    #pwd
+    {
+    width: inherit !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    #email
+    {
+        width: 261px !important;
+    }
+    #pwd
+    {
+    width: 261px !important;
+    }
+}
+@media  (min-width: 1200px) {
+    #email
+    {
+        width: 336px !important;
+    }
+    #pwd
+    {
+    width: 336px !important;
+    }
+}
+
 #email
 {
     width: 370px;
