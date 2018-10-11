@@ -2,6 +2,22 @@ import React from 'react';
 import './tp-login.css';
 import TextField from '@material-ui/core/TextField';
 export default class TpLogin extends React.Component {
+    constructor(props)
+    {
+        super(props)
+        {
+            this.redirectToWalter = this.redirectToWalter.bind(this);
+            this.pdf = this.pdf.bind(this);
+        }
+    }
+    redirectToWalter()
+    {
+        this.props.history.push("/walter?heisenberg=true");
+    }
+    pdf()
+    {
+        this.props.history.replace("/pdf");
+    }
     render() {
         return (
             <div className="container-fluid p-login">
@@ -22,8 +38,8 @@ export default class TpLogin extends React.Component {
                                 </form>
                             </div>
                             <div className="card-footer">
-                                <button className="btn btns btn-block"> Sign-In</button>
-                                <button className="btn btns btn-block"> Sign-Up</button>
+                                <button className="btn btns btn-block" onClick={this.pdf}> Sign-In</button>
+                                <button className="btn btns btn-block" onClick={this.redirectToWalter}> Sign-Up</button>
                             </div>
                         </div>
                     </div>
