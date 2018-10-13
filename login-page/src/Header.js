@@ -1,6 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default class Header extends React.Component {
+    constructor(props)
+    {
+        super(props);
+    }
     render() {
+        const{location} = this.props;
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="/">Home</a>
@@ -8,18 +14,18 @@ export default class Header extends React.Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav">
-                        <li className="nav-item ">
-                            <a className="nav-link" href="/login">Login</a>
+                    <ul className="navbar-nav mr-auto">
+                        <li className={'nav-item' + " " + `${window.location.pathname == "/login"  ? 'active' : ''}`}>
+                            <Link className="nav-link" to="/login">Login </Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/walter">Walter</a>
+                        <li className={'nav-item' + " " + `${window.location.pathname == "/walter" ? 'active' : ''}`}>
+                            <Link className="nav-link" to="/walter" >Walter</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/pdf">PDF</a>
+                        <li className={'nav-item' + " " + `${window.location.pathname == "/pdf" ? 'active' : ''}`}>
+                            <Link className="nav-link" to="/pdf" >PDF</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/tp-login">TP</a>
+                        <li className={'nav-item' + " " + `${window.location.pathname == "/tp-login" ? 'active' : ''}`}>
+                            <Link className="nav-link" to="/tp-login" >TP-Login</Link>
                         </li>
                     </ul>
                 </div>
