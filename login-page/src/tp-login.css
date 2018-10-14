@@ -14,6 +14,8 @@
 .p-login{
     height: 100vh;
     padding: 7rem;
+    background: url(https://www.tpx.com/wp-content/uploads/2017/03/TPx-Complete-Slider-Image-July-9-Fits.jpg);
+    background-repeat: no-repeat;
 }
 .tp-font{
     color:#0d0d0d;
